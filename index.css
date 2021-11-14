@@ -1,0 +1,198 @@
+:root {
+  --bg-color: #2b3a51;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+/* UTILITIES */
+.bt {
+  font-weight: bold;
+  color: white;
+}
+.underline {
+  text-decoration: underline;
+}
+.gray {
+  color: #808080;
+}
+.fs {
+  font-size: 1rem;
+}
+
+.mt1 {
+  margin: 1rem 0;
+}
+
+.col2 {
+  display: flex;
+  flex: 1;
+}
+.black {
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+/*  */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8rem;
+  background: #262626;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.left {
+  background: var(--bg-color);
+  flex: 0.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.left img {
+  width: 125px;
+}
+.left-content {
+  margin-left: 1rem;
+  color: rgb(172, 158, 158);
+  display: flex;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+.left-content .col1 {
+  margin-right: 1rem;
+}
+.left-content h2 {
+  color: white;
+  letter-spacing: 1px;
+}
+.left-content h2::after {
+  content: "";
+  border-bottom: 1px solid white;
+  display: block;
+  width: 80px;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 430px) {
+  .left img {
+    margin-right: 2rem;
+  }
+  .left-content {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+  .left {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .left h2 {
+    margin-top: 2.3rem;
+  }
+
+  .left::before {
+    content: "";
+    margin-top: 5rem;
+  }
+  .left .img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .left-content .Reference::before {
+    content: "";
+    background: red;
+    min-height: 400px;
+    display: inline-block;
+  }
+}
+.right {
+  flex: 1;
+  padding: 1rem;
+  color: black;
+  background: white;
+}
+.right h1 {
+  margin-top: 2rem;
+  font-size: 4rem;
+  color: var(--bg-color);
+}
+.right h1::after {
+  content: "";
+  border-bottom: 10px solid var(--bg-color);
+  display: block;
+  margin-top: 0.9rem;
+}
+
+.right .roles {
+  list-style: disc;
+  margin-left: 3rem;
+}
+
+.tech-container {
+  display: flex;
+}
+.tech-container .box1 {
+  flex: 1;
+}
+
+@media screen and (min-width: 600px) {
+  .left-content {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  .right {
+    font-size: 1.2rem;
+    line-height: 2.3rem;
+  }
+  .right h1 {
+    margin-top: 6rem;
+  }
+  .reference {
+    margin-top: 10rem;
+  }
+  .mt5 {
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .right h1 {
+    font-size: 6rem;
+    line-height: 3rem;
+  }
+}
