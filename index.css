@@ -19,6 +19,7 @@ img {
 }
 .underline {
   text-decoration: underline;
+  color: #5a5858;
 }
 .gray {
   color: #808080;
@@ -36,7 +37,7 @@ img {
   flex: 1;
 }
 .black {
-  font-weight: bolder;
+  font-weight: 800;
   font-size: 1.2rem;
 }
 /*  */
@@ -52,6 +53,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem 0;
 }
 
 .container {
@@ -95,7 +97,9 @@ body {
   width: 80px;
   margin-bottom: 0.5rem;
 }
-
+.Contact a {
+  color: #808080;
+}
 @media screen and (min-width: 430px) {
   .left img {
     margin-right: 2rem;
